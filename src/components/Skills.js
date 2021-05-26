@@ -73,7 +73,9 @@ const Skills = () => {
                     textAlign: "center",
                   }}
                 >
-                  <h2 style={{ color: "#ff4a57" }}>{item?.heading} </h2>
+                  <h2 style={{ color: "#ff4a57", marginBottom: "10px" }}>
+                    {item?.heading}
+                  </h2>
                   <AnimatedProgressProvider
                     valueStart={0}
                     valueEnd={item?.value}

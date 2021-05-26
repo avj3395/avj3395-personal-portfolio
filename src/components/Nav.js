@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAlignJustify } from "react-icons/fa";
 const Nav = () => {
-  const [state, setState] = React.useState(true);
+  const [state, setState] = React.useState(false);
 
   return (
     <nav className="navbar">
@@ -12,27 +12,54 @@ const Nav = () => {
               Akshay<span>.</span>V<span>.</span>J
             </a>
           </ul>
-          {state ? (
-            <ul className="navbar__right">
+
+          <ul className="navbar__right">
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#about-us">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          {state && (
+            <ul className="mobile_view">
               <li>
-                <a href="#header">Home</a>
+                <a href="#header" onClick={() => setState(!state)}>
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <a href="#services" onClick={() => setState(!state)}>
+                  Services
+                </a>
               </li>
               <li>
-                <a href="#about-us">About</a>
+                <a href="#about-us" onClick={() => setState(!state)}>
+                  About
+                </a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills" onClick={() => setState(!state)}>
+                  Skills
+                </a>
               </li>
 
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={() => setState(!state)}>
+                  Contact
+                </a>
               </li>
             </ul>
-          ) : (
-            ""
           )}
         </div>
       </div>

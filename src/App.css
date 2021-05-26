@@ -158,6 +158,11 @@ body {
   border: none;
   color: #fff;
   text-decoration: none;
+  transition: background 1.5s;
+}
+.btn:hover {
+  color: #ff4a57;
+  background: #fff;
 }
 .btn-outline {
   border: 2px solid #ff4a57;
@@ -374,7 +379,7 @@ body {
   position: fixed;
   top: 20px;
   right: 25px;
-  background: #000;
+  background: rgb(33, 38, 59);
   color: #fff;
   width: 50px;
   height: 50px;
@@ -382,6 +387,9 @@ body {
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  display: none;
+}
+.mobile_view {
   display: none;
 }
 @media (max-width: 765px) {
@@ -399,6 +407,22 @@ body {
     width: 100%;
   }
   .navbar__right {
+    /* flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: #1f2235;
+    position: fixed;
+    top: 0;
+    left: 0; */
+    display: none;
+  }
+  /* .navbar__right li a {
+    display: block;
+    padding: 20px 0;
+    font-size: 14px;
+  } */
+  .mobile_view {
+    display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -406,11 +430,16 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    list-style-type: none;
   }
-  .navbar__right li a {
-    display: block;
-    padding: 20px 0;
+  .mobile_view li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .mobile_view li a {
     font-size: 14px;
+    text-decoration: none;
+    color: #fff;
   }
   .toggle {
     display: flex;
