@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/avj3395-personal-portfolio/static/css/main.ce49f06a.chunk.css",
-    "main.js": "/avj3395-personal-portfolio/static/js/main.0e65d477.chunk.js",
-    "main.js.map": "/avj3395-personal-portfolio/static/js/main.0e65d477.chunk.js.map",
+    "main.css": "/avj3395-personal-portfolio/static/css/main.162b1381.chunk.css",
+    "main.js": "/avj3395-personal-portfolio/static/js/main.a7e52d95.chunk.js",
+    "main.js.map": "/avj3395-personal-portfolio/static/js/main.a7e52d95.chunk.js.map",
     "runtime-main.js": "/avj3395-personal-portfolio/static/js/runtime-main.4f1dff56.js",
     "runtime-main.js.map": "/avj3395-personal-portfolio/static/js/runtime-main.4f1dff56.js.map",
     "static/css/2.e2331d7d.chunk.css": "/avj3395-personal-portfolio/static/css/2.e2331d7d.chunk.css",
     "static/js/2.0ad47519.chunk.js": "/avj3395-personal-portfolio/static/js/2.0ad47519.chunk.js",
     "static/js/2.0ad47519.chunk.js.map": "/avj3395-personal-portfolio/static/js/2.0ad47519.chunk.js.map",
     "index.html": "/avj3395-personal-portfolio/index.html",
-    "precache-manifest.3b5686d4b729fec117f4c3998812c42a.js": "/avj3395-personal-portfolio/precache-manifest.3b5686d4b729fec117f4c3998812c42a.js",
+    "precache-manifest.294790abf038cb9995009a02791ea777.js": "/avj3395-personal-portfolio/precache-manifest.294790abf038cb9995009a02791ea777.js",
     "service-worker.js": "/avj3395-personal-portfolio/service-worker.js",
     "static/css/2.e2331d7d.chunk.css.map": "/avj3395-personal-portfolio/static/css/2.e2331d7d.chunk.css.map",
-    "static/css/main.ce49f06a.chunk.css.map": "/avj3395-personal-portfolio/static/css/main.ce49f06a.chunk.css.map",
+    "static/css/main.162b1381.chunk.css.map": "/avj3395-personal-portfolio/static/css/main.162b1381.chunk.css.map",
     "static/js/2.0ad47519.chunk.js.LICENSE.txt": "/avj3395-personal-portfolio/static/js/2.0ad47519.chunk.js.LICENSE.txt",
     "static/media/App.css": "/avj3395-personal-portfolio/static/media/bg.c8d71407.png",
     "static/media/man-01.png": "/avj3395-personal-portfolio/static/media/man-01.4ed7e053.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.4f1dff56.js",
     "static/css/2.e2331d7d.chunk.css",
     "static/js/2.0ad47519.chunk.js",
-    "static/css/main.ce49f06a.chunk.css",
-    "static/js/main.0e65d477.chunk.js"
+    "static/css/main.162b1381.chunk.css",
+    "static/js/main.a7e52d95.chunk.js"
   ]
 }
