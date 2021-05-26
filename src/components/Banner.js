@@ -3,11 +3,11 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Banner = () => {
   const [state] = React.useState({
     title: "I am Akshay V J",
-    text: "Iam frontend developer, designing and building responsive web design and mobile apps.  Proficient in REACT, HTML and CSS.​",
+    text: "I am frontend developer, designing and building responsive web design and mobile apps.  Proficient in REACT, HTML and CSS.​",
     image: "/images/man-01.png",
   });
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="container">
         <div className="row">
           <div className="col-6">
@@ -33,7 +33,11 @@ const Banner = () => {
                 <h1>{state.title}</h1>
                 <p>{state.text}</p>
                 <div className="header__buttons">
-                  <a href="" className="btn btn-outline">
+                  <a
+                    href="https://drive.google.com/file/d/1HLPlvz5uBR37nIAjCC_f5zsqXrrsqapL/view"
+                    className="btn btn-outline"
+                    target="_blank"
+                  >
                     Download CV
                   </a>
                 </div>

@@ -2,13 +2,15 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="container">
         <div className="contactSection">
           <div className="row justifyConter">
             <div className="col-6">
               <div className="contactSection-logo">
-                <img src="/images/logo.png" alt="" />
+                <a href="/">
+                  Akshay<span>.</span>V<span>.</span>J
+                </a>
               </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

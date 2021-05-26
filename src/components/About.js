@@ -29,7 +29,7 @@ const About = () => {
             <div className="about__info">
               <h1>Hi There</h1>
               <div className="about__info-p1">
-                Iam frontend developer, designing and building responsive web
+                I am frontend developer, designing and building responsive web
                 design and mobile apps. Proficient in REACT, HTML and CSS.​
               </div>
               <div className="about__info-p2">

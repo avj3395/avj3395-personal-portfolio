@@ -8,14 +8,14 @@ const Nav = () => {
       <div className="container">
         <div className="navbar__container">
           <ul className="navbar__left">
-            <div className="navbar__left-logo">
-              <img src="/images/logo.png" alt="logo" />
-            </div>
+            <a href="/">
+              Akshay<span>.</span>V<span>.</span>J
+            </a>
           </ul>
           {state ? (
             <ul className="navbar__right">
               <li>
-                <a href="">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#services">Services</a>
@@ -28,7 +28,7 @@ const Nav = () => {
               </li>
 
               <li>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           ) : (
