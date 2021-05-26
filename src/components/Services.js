@@ -5,6 +5,8 @@ import {
   FaAndroid,
   FaNetworkWired,
 } from "react-icons/fa";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 const Services = () => {
   const [header] = React.useState({
@@ -49,18 +51,30 @@ const Services = () => {
             <p className="mainContent">{header.text}</p>
             <div className="commonBorder"></div>
           </div>
-
-          <div className="row bgMain">
-            {state.map((info) => (
-              <div className="col-4 bgMain" key={info?.id}>
-                <div className="services__box">
-                  {info.icon}
-                  <div className="services__box-header">{info.heading}</div>
-                  <div className="services__box-p">{info.text}</div>
+          <Carousel infiniteLoop={true} autoPlay={true}>
+            <div className="row bgMain">
+              {state.slice(0, 3).map((info) => (
+                <div className="col-4 bgMain" key={info?.id}>
+                  <div className="services__box">
+                    {info.icon}
+                    <div className="services__box-header">{info.heading}</div>
+                    <div className="services__box-p">{info.text}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+            <div className="row bgMain">
+              {state.slice(3, 4).map((info) => (
+                <div className="col-4 bgMain" key={info?.id}>
+                  <div className="services__box">
+                    {info.icon}
+                    <div className="services__box-header">{info.heading}</div>
+                    <div className="services__box-p">{info.text}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Carousel>
         </div>
       </div>
     </div>

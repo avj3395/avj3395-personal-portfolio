@@ -3,6 +3,9 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import AnimatedProgressProvider from "./AnimationControl/AnimatedProgressProvider";
 import { easeQuadInOut } from "d3-ease";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
 const Skills = () => {
   const [header] = React.useState({
     mainHeader: "CHOOSE A PLAN",
@@ -51,50 +54,97 @@ const Skills = () => {
           <p className="mainContent">{header.text}</p>
           <div className="commonBorder"></div>
         </div>
-        <div className="row">
-          {state.map((item) => (
-            <div
-              className="col-4"
-              style={{
-                marginBottom: "35px",
-                height: "200px",
-              }}
-            >
+
+        <Carousel infiniteLoop={true} autoPlay={true}>
+          <div className="row">
+            {state.slice(0, 3).map((item) => (
               <div
+                className="col-4"
                 style={{
-                  width: "40%",
-                  height: "100%",
-                  margin: "auto",
-                  textAlign: "center",
+                  marginBottom: "35px",
+                  height: "200px",
                 }}
               >
-                <h2 style={{ color: "#ff4a57" }}>{item?.heading} </h2>
-                <AnimatedProgressProvider
-                  valueStart={0}
-                  valueEnd={item?.value}
-                  duration={1.4}
-                  easingFunction={easeQuadInOut}
-                  // repeat
-                >
-                  {(value) => {
-                    const roundedValue = Math.round(value);
-                    return (
-                      <CircularProgressbar
-                        value={value}
-                        text={`${roundedValue}%`}
-                        /* This is important to include, because if you're fully managing the
-        animation yourself, you'll want to disable the CSS animation. */
-                        styles={buildStyles({
-                          pathTransition: "none",
-                        })}
-                      />
-                    );
+                <div
+                  style={{
+                    width: "40%",
+                    height: "100%",
+                    margin: "auto",
+                    textAlign: "center",
                   }}
-                </AnimatedProgressProvider>
+                >
+                  <h2 style={{ color: "#ff4a57" }}>{item?.heading} </h2>
+                  <AnimatedProgressProvider
+                    valueStart={0}
+                    valueEnd={item?.value}
+                    duration={1.4}
+                    easingFunction={easeQuadInOut}
+                    // repeat
+                  >
+                    {(value) => {
+                      const roundedValue = Math.round(value);
+                      return (
+                        <CircularProgressbar
+                          value={value}
+                          text={`${roundedValue}%`}
+                          /* This is important to include, because if you're fully managing the
+        animation yourself, you'll want to disable the CSS animation. */
+                          styles={buildStyles({
+                            pathTransition: "none",
+                          })}
+                        />
+                      );
+                    }}
+                  </AnimatedProgressProvider>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+          <div className="row">
+            {state.slice(3, 6).map((item) => (
+              <div
+                className="col-4"
+                style={{
+                  marginBottom: "35px",
+                  height: "200px",
+                }}
+              >
+                <div
+                  style={{
+                    width: "40%",
+                    height: "100%",
+                    margin: "auto",
+                    textAlign: "center",
+                  }}
+                >
+                  <h2 style={{ color: "#ff4a57" }}>{item?.heading} </h2>
+                  <AnimatedProgressProvider
+                    valueStart={0}
+                    valueEnd={item?.value}
+                    duration={1.4}
+                    easingFunction={easeQuadInOut}
+                    // repeat
+                  >
+                    {(value) => {
+                      const roundedValue = Math.round(value);
+                      return (
+                        <CircularProgressbar
+                          value={value}
+                          text={`${roundedValue}%`}
+                          /* This is important to include, because if you're fully managing the
+        animation yourself, you'll want to disable the CSS animation. */
+                          styles={buildStyles({
+                            pathTransition: "none",
+                          })}
+                        />
+                      );
+                    }}
+                  </AnimatedProgressProvider>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Carousel>
       </div>
     </div>
   );

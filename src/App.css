@@ -46,10 +46,6 @@ body {
 }
 .navbar__left a:hover {
   color: #ff4a57;
-  font-weight: 800;
-  font-size: 25px;
-  cursor: pointer;
-  text-decoration: none;
 }
 .navbar__left a span {
   color: #ff4a57;
@@ -67,6 +63,10 @@ body {
   font-weight: 500;
   font-size: 18px;
   padding: 0 15px;
+  transition: color 1s;
+}
+.navbar__right li a:hover {
+  color: #ff4a57;
 }
 
 /* Helpers */
@@ -335,10 +335,6 @@ body {
 }
 .contactSection-logo a:hover {
   color: #ff4a57;
-  font-weight: 800;
-  font-size: 25px;
-  cursor: pointer;
-  text-decoration: none;
 }
 .contactSection-logo a span {
   color: #ff4a57;
