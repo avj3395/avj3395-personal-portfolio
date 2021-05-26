@@ -1,5 +1,6 @@
 import React from "react";
-
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 const Prices = () => {
   const [header] = React.useState({
     mainHeader: "CHOOSE A PLAN",
@@ -38,6 +39,8 @@ const Prices = () => {
       msg5: "10 Free Domain Names",
     },
   ]);
+  const percentage = 66;
+
   return (
     <div className="prices">
       <div className="container">
@@ -46,6 +49,12 @@ const Prices = () => {
           <h1 className="mainHeader">{header.subHeading}</h1>
           <p className="mainContent">{header.text}</p>
           <div className="commonBorder"></div>
+        </div>
+        <div className="row">
+          <div className="col-4">
+            <h1>JavaScript</h1>
+            <CircularProgressbar value={percentage} text={`${percentage}%`} />;
+          </div>
         </div>
         {/* <div className="row">
           {state.map((prices) => (
