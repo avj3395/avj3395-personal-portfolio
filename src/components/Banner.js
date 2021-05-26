@@ -4,7 +4,7 @@ const Banner = () => {
   const [state] = React.useState({
     title: "I am Akshay V J",
     text: "I am frontend developer, designing and building responsive web design and mobile apps.  Proficient in REACT, HTML and CSS.​",
-    image: "/images/man-01.png",
+    image: require("../images/man-01.png"),
   });
   return (
     <header className="header" id="header">
