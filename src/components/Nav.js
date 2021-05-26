@@ -8,14 +8,14 @@ const Nav = () => {
       <div className="container">
         <div className="navbar__container">
           <ul className="navbar__left">
-            <a href="/">
+            <a href="#header">
               Akshay<span>.</span>V<span>.</span>J
             </a>
           </ul>
           {state ? (
             <ul className="navbar__right">
               <li>
-                <a href="/">Home</a>
+                <a href="#header">Home</a>
               </li>
               <li>
                 <a href="#services">Services</a>
