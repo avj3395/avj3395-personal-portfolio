@@ -7,6 +7,7 @@ import {
   FaFileVideo,
   FaSearchDollar,
   FaAndroid,
+  FaNetworkWired,
 } from "react-icons/fa";
 const Services = () => {
   const [header] = React.useState({
@@ -34,7 +35,14 @@ const Services = () => {
     {
       id: 4,
       icon: <FaAndroid className="commonIcons" />,
-      heading: "App Devlopment",
+      heading: "Mobile App Devlopment",
+      text: "Lorem Ipsum is simply dummy text of the printing typesetting\
+        industry. simply dummy",
+    },
+    {
+      id: 5,
+      icon: <FaNetworkWired className="commonIcons" />,
+      heading: "API Devlopment",
       text: "Lorem Ipsum is simply dummy text of the printing typesetting\
         industry. simply dummy",
     },
@@ -52,7 +60,7 @@ const Services = () => {
 
           <div className="row bgMain">
             {state.map((info) => (
-              <div className="col-4 bgMain">
+              <div className="col-4 bgMain" key={info?.id}>
                 <div className="services__box">
                   {info.icon}
                   <div className="services__box-header">{info.heading}</div>

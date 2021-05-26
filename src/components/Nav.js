@@ -2,6 +2,7 @@ import React from "react";
 import { FaAlignJustify } from "react-icons/fa";
 const Nav = () => {
   const [state, setState] = React.useState(true);
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -23,7 +24,7 @@ const Nav = () => {
                 <a href="#about-us">About</a>
               </li>
               <li>
-                <a href="">Skills</a>
+                <a href="#skills">Skills</a>
               </li>
 
               <li>
