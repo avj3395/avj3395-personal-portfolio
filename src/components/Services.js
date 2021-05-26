@@ -9,6 +9,7 @@ import {
   FaAndroid,
   FaNetworkWired,
 } from "react-icons/fa";
+
 const Services = () => {
   const [header] = React.useState({
     mainHeader: "SERVICES",
