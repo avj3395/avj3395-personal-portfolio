@@ -3,8 +3,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Banner = () => {
   const [state] = React.useState({
     title: "I am Akshay V J",
-    text: "i,m Jonathan, professional web developer with long time \
-    experience in this field​",
+    text: "Iam frontend developer, designing and building responsive web design and mobile apps.  Proficient in REACT, HTML and CSS.​",
     image: "/images/man-01.png",
   });
   return (
@@ -35,7 +34,7 @@ const Banner = () => {
                 <p>{state.text}</p>
                 <div className="header__buttons">
                   <a href="" className="btn btn-outline">
-                    Download Resume
+                    Download CV
                   </a>
                 </div>
               </div>
