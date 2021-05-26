@@ -10,8 +10,8 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div>
-      <Banner />
       <Nav />
+      <Banner />
       <Services />
       <About />
       <Skills />

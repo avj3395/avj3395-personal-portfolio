@@ -20,17 +20,29 @@ const Contact = () => {
               </p>
               <ul className="contactCircles">
                 <li>
-                  <a href="https://www.facebook.com/avj3395/">
+                  <a
+                    href="https://www.facebook.com/avj3395/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaFacebookF className="contactIcon" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/akshay-v-j-5b4b501b5/">
+                  <a
+                    href="https://www.linkedin.com/in/akshay-v-j-5b4b501b5/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaLinkedinIn className="contactIcon" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/i____am___inevitable/">
+                  <a
+                    href="https://www.instagram.com/i____am___inevitable/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaInstagram className="contactIcon" />
                   </a>
                 </li>

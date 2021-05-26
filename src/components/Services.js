@@ -1,11 +1,7 @@
 import React from "react";
 import {
   FaGithub,
-  FaCamera,
   FaCircleNotch,
-  FaApple,
-  FaFileVideo,
-  FaSearchDollar,
   FaAndroid,
   FaNetworkWired,
 } from "react-icons/fa";
@@ -14,38 +10,33 @@ const Services = () => {
   const [header] = React.useState({
     mainHeader: "SERVICES",
     subHeading: "My Services",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting\
-    industry. Lorem Ipsum standard dummy text.",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
   });
   const [state] = React.useState([
     {
       id: 1,
       icon: <FaGithub className="commonIcons" />,
       heading: "Web Development",
-      text: "Lorem Ipsum is simply dummy text of the printing typesetting\
-      industry. simply dummy",
+      text: "Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
     },
 
     {
       id: 3,
       icon: <FaCircleNotch className="commonIcons" />,
       heading: "Web Desing",
-      text: "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
     },
     {
       id: 4,
       icon: <FaAndroid className="commonIcons" />,
       heading: "Mobile App Devlopment",
-      text: "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Lorem Ipsum is simply dummy text of the printing typesetting  industry. simply dummy",
     },
     {
       id: 5,
       icon: <FaNetworkWired className="commonIcons" />,
       heading: "API Devlopment",
-      text: "Lorem Ipsum is simply dummy text of the printing typesetting\
-        industry. simply dummy",
+      text: "Lorem Ipsum is simply dummy text of the printing typesetting  industry. simply dummy",
     },
   ]);
   return (

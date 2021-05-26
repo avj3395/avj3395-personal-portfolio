@@ -15,17 +15,29 @@ const Banner = () => {
               <div className="header__section">
                 <ul className="header__ul">
                   <li>
-                    <a href="https://www.facebook.com/avj3395/">
+                    <a
+                      href="https://www.facebook.com/avj3395/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaFacebookF className="headerIcon" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/akshay-v-j-5b4b501b5/">
+                    <a
+                      href="https://www.linkedin.com/in/akshay-v-j-5b4b501b5/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaLinkedinIn className="headerIcon" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/i____am___inevitable/">
+                    <a
+                      href="https://www.instagram.com/i____am___inevitable/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaInstagram className="headerIcon" />
                     </a>
                   </li>
@@ -37,6 +49,7 @@ const Banner = () => {
                     href="https://drive.google.com/file/d/1HLPlvz5uBR37nIAjCC_f5zsqXrrsqapL/view"
                     className="btn btn-outline"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Download CV
                   </a>
