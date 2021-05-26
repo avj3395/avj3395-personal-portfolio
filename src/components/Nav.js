@@ -1,10 +1,29 @@
-import React from "react";
-import { FaAlignJustify } from "react-icons/fa";
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import { FaAlignJustify, FaRegWindowClose } from "react-icons/fa";
 const Nav = () => {
-  const [state, setState] = React.useState(false);
+  const [state, setState] = useState(false);
+  const [scrollPosition, setPosition] = useState(0);
+  const [navClass, setNavClass] = useState("navbar");
+  // console.log("===", scrollPosition);
 
+  useLayoutEffect(() => {
+    function updatePosition() {
+      setPosition(window.pageYOffset);
+    }
+    window.addEventListener("scroll", updatePosition);
+    updatePosition();
+    return () => window.removeEventListener("scroll", updatePosition);
+  }, []);
+
+  useEffect(() => {
+    if (scrollPosition >= 300) {
+      setNavClass("navbar_scroll");
+    } else {
+      setNavClass("navbar");
+    }
+  }, [scrollPosition]);
   return (
-    <nav className="navbar">
+    <nav className={navClass}>
       <div className="container">
         <div className="navbar__container">
           <ul className="navbar__left">
@@ -64,7 +83,7 @@ const Nav = () => {
         </div>
       </div>
       <div className="toggle" onClick={() => setState(!state)}>
-        <FaAlignJustify />
+        {state ? <FaRegWindowClose /> : <FaAlignJustify />}
       </div>
     </nav>
   );

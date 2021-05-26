@@ -61,7 +61,7 @@ const Skills = () => {
               <div
                 className="col-4"
                 style={{
-                  marginBottom: "35px",
+                  marginBottom: "40px",
                   height: "200px",
                 }}
               >
@@ -81,7 +81,7 @@ const Skills = () => {
                     valueEnd={item?.value}
                     duration={1.4}
                     easingFunction={easeQuadInOut}
-                    // repeat
+                    //repeat
                   >
                     {(value) => {
                       const roundedValue = Math.round(value);
@@ -107,7 +107,7 @@ const Skills = () => {
               <div
                 className="col-4"
                 style={{
-                  marginBottom: "35px",
+                  marginBottom: "40px",
                   height: "200px",
                 }}
               >
@@ -119,13 +119,15 @@ const Skills = () => {
                     textAlign: "center",
                   }}
                 >
-                  <h2 style={{ color: "#ff4a57" }}>{item?.heading} </h2>
+                  <h2 style={{ color: "#ff4a57", marginBottom: "10px" }}>
+                    {item?.heading}{" "}
+                  </h2>
                   <AnimatedProgressProvider
                     valueStart={0}
                     valueEnd={item?.value}
                     duration={1.4}
                     easingFunction={easeQuadInOut}
-                    // repeat
+                    //repeat
                   >
                     {(value) => {
                       const roundedValue = Math.round(value);
