@@ -28,19 +28,6 @@ body {
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-.navbar_scroll {
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  background: #1f2235;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: background 1.5s;
-}
-.navbar_scroll:hover {
-  background: #ff4a57;
-}
 
 .navbar__container {
   display: flex;
@@ -204,7 +191,7 @@ body {
 }
 
 .common {
-  width: 33.33333333333333%;
+  width: 50%;
   margin: 20px auto;
   text-align: center;
 }
