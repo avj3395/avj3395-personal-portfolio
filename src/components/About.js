@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   const [header] = React.useState({
     subHeader: "About Me",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+    text: "Innovative frontend developer, designing and building responsive web design and mobile apps. Proficient in REACT, HTML, and CSS. Passionate about usability and possess working knowledge of designing.",
   });
   const [state] = React.useState([
     { id: 1, title: "Name:", text: "Akshay V J" },
