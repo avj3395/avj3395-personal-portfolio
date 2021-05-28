@@ -13,7 +13,7 @@ const Services = () => {
   const [header] = React.useState({
     mainHeader: "SERVICES",
     subHeading: "My Services",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+    text: "I do services which includes web development, API development, testing and debugging, web design & mobile app development ",
   });
   const [state] = React.useState([
     {

@@ -10,7 +10,7 @@ const Skills = () => {
   const [header] = React.useState({
     mainHeader: "CHOOSE A PLAN",
     subHeading: "Skills",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+    text: "I am a Good listener with communication skills , when coming to the technical side, Proficient in REACT , HTML & CSS .",
   });
   const [state] = React.useState([
     {
