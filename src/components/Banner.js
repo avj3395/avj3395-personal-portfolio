@@ -4,7 +4,7 @@ const Banner = () => {
   const [state] = React.useState({
     title: "I am Akshay V J",
     text: "I am frontend developer, designing and building responsive web design and mobile apps.  Proficient in REACT, HTML and CSS.​",
-    image: require("../images/man-01.png"),
+    image: require("../images/avj-pic.png"),
   });
   return (
     <header className="header" id="header">
@@ -59,7 +59,11 @@ const Banner = () => {
           </div>
           <div className="col-6">
             <div className="banner__img">
-              <img src={state.image} alt="man" />
+              <img
+                src={state.image}
+                style={{ width: "450px", height: "650px" }}
+                alt="man"
+              />
             </div>
           </div>
         </div>
